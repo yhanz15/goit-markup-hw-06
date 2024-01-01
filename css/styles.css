@@ -644,7 +644,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-top: 30px;
+  margin-top: -12px;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -747,12 +747,7 @@ img {
 .privacy {
   display: block;
 }
-.checkbox {
-  border: none;
-  position: absolute;
-  fill: var(--cloud);
-  background-color: var(--ocean);
-}
+
 .check-mark {
   width: 16px;
   height: 16px;
@@ -766,18 +761,10 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
-.check-mark:hover,
-.check-mark:focus {
+.checkbox:checked + .form-agree-box > .check-mark {
   border: none;
   background-color: var(--ocean);
   fill: var(--cloud);
-}
-.checkbox-icon {
-  cursor: pointer;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--lightslate);
 }
 
 .commitment {
@@ -983,8 +970,8 @@ img {
   color: var(--cloud);
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
