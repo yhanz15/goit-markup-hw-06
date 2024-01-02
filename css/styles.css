@@ -765,7 +765,11 @@ img {
   background-color: var(--ocean);
   fill: var(--cloud);
 }
-
+.checkbox {
+  border: none;
+  background-color: var(--ocean);
+  fill: var(--cloud);
+}
 .commitment {
   margin-bottom: 16px;
 }
